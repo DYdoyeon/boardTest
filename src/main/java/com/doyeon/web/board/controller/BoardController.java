@@ -23,7 +23,7 @@ public class BoardController {
 	@Inject
 	private BoardService boardService;
 
-	@RequestMapping(value = "/getBoardList.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/getBoardList", method = RequestMethod.GET)
 	public String getBoardList(Model model) throws Exception {
 
 		model.addAttribute("boardList", boardService.getBoardList());
